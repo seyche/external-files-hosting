@@ -404,6 +404,9 @@ article:hover .more {
     transition: all 0.5s;
 }
 
+.popup p:first-of-type {margin-top: 0;}
+.popup p:last-of-type {margin-bottom: 0;}
+
 .popup nav a {
     background-color: var(--accent);
     color: var(--content-background);
