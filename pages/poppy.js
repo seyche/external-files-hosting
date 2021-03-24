@@ -46,6 +46,7 @@ $(document).ready(function() {
     $('.more').click(function(){
          $(this).closest('article').find('.popup').toggleClass('slide-in');
          $(this).toggleClass('more-clicked');
+         $(this).closest('article').toggleClass('item-active');
     });
  
 });
