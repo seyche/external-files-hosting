@@ -120,6 +120,18 @@ body::before {
 .tmblr-iframe-pushdown {padding-top: 0!important;} 
 .tmblr-iframe--app-cta-button {display: none!important;}
 
+.return svg {
+    width: 1.5em;
+    height: 1.5em;
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    background-color: var(--background);
+    padding: 0.35em;
+    border-radius: 4px;
+    z-index: 15;
+}
+
 /*----- COMMON -----*/
 
 img {
@@ -585,4 +597,5 @@ input:-ms-input-placeholder {color: var(--text);}
     .top-wrap svg, .title-wrap svg {display: none;}
     #faves {margin-bottom: 2.5em;}
     aside {padding: 0 10vw;}
+    .return {display: none;}
 }
