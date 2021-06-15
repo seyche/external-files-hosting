@@ -369,6 +369,7 @@ footer {
     box-shadow: -2px -2px 10px var(--drop-shadow);
     z-index: 10;
     text-align: center;
+    display: var(--music-player-visibility);
 }
  
 #footer-padding {padding: calc(1em + 3px) 1em 1em 1em; box-sizing: border-box;}
@@ -517,12 +518,22 @@ input::-moz-placeholder {color: var(--text);}
 input:-moz-placeholder {color: var(--text);}
 input:-ms-input-placeholder {color: var(--text);}
 
+#hold {
+    width: 2em;
+    display: inline-block;
+    background-color: var(--footer-background);
+}
+
 #k {
     font-size: 15px;
     padding: 5px 9px;
     border-radius: 50%;
-    background: var(--content-background);
+    background-color: var(--content-background);
     color: var(--accent-2);
+    position: fixed;
+    right: 1em;
+    bottom: 1.75em;
+    z-index: 15;
 }
  
 #k:hover {background-color: var(--accent-1); color: var(--footer-title);}
@@ -547,7 +558,7 @@ input:-ms-input-placeholder {color: var(--text);}
 }
 
 @media only screen and (max-width: 900px) {
-    footer #search-wrap, footer .player-wrap {display: none;}
+    footer #search-wrap, footer .player-wrap, #k {display: none;}
     footer .align-flex {justify-content: center;}
     #m {display: block;}
 }
