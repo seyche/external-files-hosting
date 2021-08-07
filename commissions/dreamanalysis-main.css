@@ -1,38 +1,3 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: {color:text};
-    background-color: {color:background};
-    text-align: left;
-    line-height: 160%;
-    word-wrap: break-word;
-    letter-spacing: 0.04em;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    {block:ifBackgroundImage}
-    background-image: url('{image:Background}');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    {/block:ifBackgroundImage}
-    -webkit-transition: 2s opacity;
-    -moz-transition: 2s opacity;
-    -ms-transition: 2s opacity;
-    -o-transition: 2s opacity;
-    transition: 2s opacity;
-}
-
-body.load-in {
-    opacity: 0;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none;
-}
-
 a {
     color: {color:link}; 
     cursor: pointer;
